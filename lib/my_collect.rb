@@ -2,7 +2,7 @@ def my_collect(array)
   counter = 0
   new_array = []
   while counter < array.length
-    yield(array[counter])
+    new_array.push(yield(array[counter]))
     counter += 1
   end
   new_array
@@ -12,8 +12,7 @@ array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 collection = ['ruby', 'javascript', 'python', 'objective-c']
 
 my_collect(array) do |name|
-  new_array.push(name.split('').first)
-  
+  name.split('').first
 end
 
 my_collect(collection) do |language|
