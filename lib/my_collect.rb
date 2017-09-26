@@ -13,6 +13,6 @@ my_collect(array) do |name|
   name.split('').first
 end
 
-my_collection(collection) do |language|
+my_collect(collection) do |language|
   language.upcase
 end
