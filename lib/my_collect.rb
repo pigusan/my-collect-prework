@@ -7,7 +7,12 @@ def my_collect(array)
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+collection = ['ruby', 'javascript', 'python', 'objective-c']
 
 my_collect(array) do |name|
   name.split('').first
+end
+
+my_collection(collection) do |language|
+  language.upcase
 end
