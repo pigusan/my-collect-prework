@@ -12,7 +12,8 @@ array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 collection = ['ruby', 'javascript', 'python', 'objective-c']
 
 my_collect(array) do |name|
-  name.split('').first
+  new_array.push(name.split('').first)
+  
 end
 
 my_collect(collection) do |language|
