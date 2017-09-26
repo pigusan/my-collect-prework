@@ -5,7 +5,7 @@ def my_collect(array)
     yield(array[counter])
     counter += 1
   end
-  array
+  new_array
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
